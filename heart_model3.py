@@ -1,6 +1,8 @@
 # HEART DISEASE PREDICTION - COMPLETE CODE
 # Comparing Logistic Regression vs Decision Tree
 
+from xml.parsers.expat import model
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -382,6 +384,10 @@ dt_probability = dt_model.predict_proba(new_patient)[0]
 print("\n--- Decision Tree Prediction ---")
 print(f"Prediction: {'Heart Disease' if dt_prediction == 1 else 'No Heart Disease'}")
 print(f"Probability of Disease: {dt_probability[1]*100:.2f}%")
+
+#import joblib
+#joblib.dump(model, 'heart_model.pkl')
+
 
 
 

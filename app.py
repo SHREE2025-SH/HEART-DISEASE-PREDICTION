@@ -119,7 +119,3 @@ if st.button("🔮 Predict Risk", type="primary") and lr_model is not None:
         st.info(f"🤝 **Both models agree:** {'Heart Disease' if lr_pred == 1 else 'No Heart Disease'}")
     else:
         st.warning("❓ **Models disagree**—consider additional tests.")
-
-# Footer
-st.markdown("---")
-st.markdown("*Powered by your heart_model3.py | ⚠️ For educational use only—not medical advice.*")
